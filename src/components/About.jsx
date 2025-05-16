@@ -41,21 +41,21 @@ const About = () => {
           
           <div className="lg:w-1/2">
             <div className="grid grid-cols-2 gap-4 relative">
-              <div className="absolute -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-orange-200 rounded-full opacity-30"></div>
+              <div className="absolute -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-65 bg-orange-200 rounded-full opacity-30"></div>
               
-              <div className="col-span-2">
+              {/* <div className="col-span-2">
                 <img 
                   src="https://images.pexels.com/photos/3205574/pexels-photo-3205574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
                   alt="Dedicated team working on Orange Lilies" 
                   className="rounded-xl shadow-md w-full object-cover h-48"
                 />
-              </div>
+              </div> */}
               
               <div>
                 <img 
                   src={women}
                   alt="Women entrepreneurs" 
-                  className="rounded-xl shadow-md w-full object-cover h-64"
+                  className="rounded-xl shadow-md w-full object-cover h-65"
                 />
               </div>
               
@@ -63,7 +63,7 @@ const About = () => {
                 <img 
                   src={men} 
                   alt="Product development" 
-                  className="rounded-xl shadow-md w-full object-cover h-64"
+                  className="rounded-xl shadow-md w-full object-cover h-65"
                 />
               </div>
             </div>

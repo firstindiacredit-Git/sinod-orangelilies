@@ -35,7 +35,7 @@ const HowToUse = () => {
               <img 
                 src={howImage}
                 alt="Using Orange Lilies" 
-                className="w-full h-[250px] sm:h-[400px] md:h-[500px] object-cover object-center"
+                className="w-full h-auto max-h-[580px] object-contain md:object-cover md:object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-orange-900/40 to-transparent flex items-end">
                 {/* <div className="p-6">

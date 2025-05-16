@@ -125,7 +125,7 @@ const Hero = () => {
               <motion.img 
                 src={heroImage}
                 alt="Woman feeling comfortable and confident" 
-                className="rounded-2xl shadow-xl relative z-10 w-full h-[200px] sm:h-[400px] md:h-[500px] object-cover object-center"
+                className="rounded-2xl shadow-xl relative z-10 w-full h-auto max-h-[500px] object-contain  lg:h-[500px] lg:object-cover lg:object-center lg:w-[580px]"
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
               />
