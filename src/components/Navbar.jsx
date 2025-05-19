@@ -78,11 +78,11 @@ const Navbar = () => {
                     <div className="md:hidden absolute top-full left-0 right-0 bg-orange-400/95 backdrop-blur-md mt-1 py-4 px-4 shadow-lg rounded-b-xl animate-fadeIn">
                         <nav className="flex flex-col space-y-4">
                             <a
-                                href="#about"
+                                href="#features"
                                 className="text-white hover:text-orange-200 transition-colors duration-300 px-2 py-2"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
-                                <span className="text-white">About</span>
+                                <span className="text-white">Features</span>
                             </a>
                             {/* <a
                                 href="#products"
@@ -93,18 +93,25 @@ const Navbar = () => {
 
                             </a> */}
                             <a
-                                href="#why-choose"
+                                href="#how-to-use"
                                 className="text-white hover:text-orange-200 transition-colors duration-300 px-2 py-2"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
-                                <span className="text-white">Why Choose Us</span>
+                                <span className="text-white">How to Use</span>
                             </a>
                             <a
-                                href="#faq"
+                                href="#pricing"
                                 className="text-white hover:text-orange-200 transition-colors duration-300 px-2 py-2"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
-                                <span className="text-white">FAQs</span>
+                                <span className="text-white">Pricing</span>
+                            </a>
+                            <a
+                                href="#about"
+                                className="text-white hover:text-orange-200 transition-colors duration-300 px-2 py-2"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                                <span className="text-white">About</span>
                             </a>
                             <a
                                 href="#contact"

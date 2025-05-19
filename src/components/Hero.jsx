@@ -40,12 +40,12 @@ const Hero = () => {
   return (
     <section 
       id="hero" 
-      className="pt-28 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-orange-50 to-orange-100 overflow-hidden"
+      className="min-h-screen flex items-center justify-center pt-20 pb-16 md:pt-24 md:pb-20 bg-gradient-to-br from-orange-50 to-orange-100 overflow-hidden"
     >
-      <div className="container mx-auto px-4 md:px-8">
-        <div className="flex flex-col md:flex-row items-center">
+      <div className="container mx-auto px-4 md:px-8 max-w-7xl">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <motion.div 
-            className="md:w-1/2 mb-10 md:mb-0"
+            className="w-full md:w-1/2 flex flex-col items-start"
             initial="hidden"
             animate="visible"
             variants={{
@@ -58,7 +58,7 @@ const Hero = () => {
           >
             <motion.h1 
               variants={textVariants}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold font-serif leading-tight mb-4 text-orange-700"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold font-serif leading-tight mb-6 text-orange-700"
             >
               Period Care <motion.span 
                 className="text-orange-500 inline-block"
@@ -68,23 +68,23 @@ const Hero = () => {
             </motion.h1>
             <motion.p 
               variants={textVariants}
-              className="text-lg md:text-xl mb-6 text-neutral-700 max-w-xl"
+              className="text-lg md:text-xl mb-6 text-neutral-700"
             >
               Orange Lilies Disposable Panties – the ultimate blend of comfort, hygiene, and freedom. Say goodbye to leaks, discomfort, and bulky products.
             </motion.p>
             <motion.p 
               variants={textVariants}
-              className="text-neutral-600 mb-8 max-w-xl"
+              className="text-neutral-600 mb-8"
             >
               Designed for young girls, working women, travelers, and athletes – Orange Lilies make period days worry-free, anywhere, anytime.
             </motion.p>
             <motion.div 
               variants={textVariants}
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
             >
               <motion.a 
                 href="#pricing" 
-                className="btn-primary text-center"
+                className="btn-primary text-center px-8 py-3"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -92,7 +92,7 @@ const Hero = () => {
               </motion.a>
               <motion.a 
                 href="#features" 
-                className="flex items-center justify-center px-6 py-3 bg-white text-orange-500 rounded-full border border-orange-500 hover:bg-orange-50 transition duration-300"
+                className="flex items-center justify-center px-8 py-3 bg-white text-orange-500 rounded-full border border-orange-500 hover:bg-orange-50 transition duration-300"
                 whileHover={{ scale: 1.05, backgroundColor: "#fff7ed" }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -107,12 +107,12 @@ const Hero = () => {
             </motion.div>
           </motion.div>
           <motion.div 
-            className="md:w-1/2 w-full"
+            className="w-full md:w-1/2 flex items-center justify-center"
             initial="hidden"
             animate="visible"
             variants={imageVariants}
           >
-            <div className="relative">
+            <div className="relative w-full max-w-lg">
               <motion.div 
                 className="absolute -top-6 -left-6 w-24 h-24 bg-orange-200 rounded-full opacity-50"
                 animate={floatingAnimation}
@@ -125,7 +125,7 @@ const Hero = () => {
               <motion.img 
                 src={heroImage}
                 alt="Woman feeling comfortable and confident" 
-                className="rounded-2xl shadow-xl relative z-10 w-full h-auto max-h-[500px] object-contain  lg:h-[500px] lg:object-cover lg:object-center lg:w-[580px]"
+                className="rounded-2xl shadow-xl relative z-10 w-full h-auto object-contain"
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
               />

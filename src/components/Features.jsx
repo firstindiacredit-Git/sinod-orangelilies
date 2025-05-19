@@ -145,7 +145,7 @@ const Features = () => {
 
   return (
     <section id="features" className="py-16 md:py-24 bg-gradient-to-br from-orange-50 to-white">
-      <div className="container mx-auto px-4 md:px-8">
+      <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 20 }}
@@ -158,25 +158,25 @@ const Features = () => {
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >Orange Lilies</motion.span></h2>
-          <p className="section-subtitle">
+          <p className="section-subtitle max-w-3xl mx-auto">
             The most convenient period care solution for young girls, working women, sportswomen, and travelers.
           </p>
         </motion.div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {featuresList.map((feature, index) => (
             <FeatureCard key={index} feature={feature} index={index} />
           ))}
         </div>
         
         <motion.div 
-          className="mt-16 text-center"
+          className="mt-16 text-center max-w-4xl mx-auto"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           <motion.div 
-            className="inline-block p-4 bg-orange-50 rounded-lg mb-4"
+            className="inline-block p-4 bg-orange-50 rounded-lg mb-6"
             whileHover={{ scale: 1.05, backgroundColor: "#fff7ed" }}
           >
             <span className="text-orange-700 font-medium">Perfect for your lifestyle</span>
@@ -192,14 +192,14 @@ const Features = () => {
             >even on heavy flow days</motion.span>
           </motion.h2>
           <motion.p 
-            className="text-lg text-neutral-700 max-w-3xl mx-auto mb-8"
+            className="text-lg text-neutral-700 mb-8"
             whileHover={{ scale: 1.01 }}
           >
             Orange Lilies Disposable Panties are crafted for maximum absorption and softness, giving you worry-free protection and comfort from morning to night.
           </motion.p>
           <motion.a 
             href="#pricing" 
-            className="btn-primary inline-block"
+            className="btn-primary inline-block px-8 py-3"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
