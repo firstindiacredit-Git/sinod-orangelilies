@@ -39,8 +39,8 @@ const HowToUse = () => {
                 alt="Using Orange Lilies" 
                 className="w-full h-auto object-contain md:object-cover md:object-center"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-orange-900/40 to-transparent flex items-end">
-              </div>
+              {/* <div className="absolute inset-0 bg-gradient-to-t from-orange-900/40 to-transparent flex items-end">
+              </div> */}
             </div>
           </div>
           

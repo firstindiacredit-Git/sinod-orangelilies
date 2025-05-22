@@ -85,13 +85,13 @@ const FeatureCard = ({ feature, index }) => {
   return (
     <Card
       index={index}
-      className={`bg-gradient-to-br ${feature.gradient} group`}
+      className={`bg-gradient-to-br ${feature.gradient} group hover:shadow-xl`}
       hoverScale={1.03}
       hoverRotate={1}
     >
       <div className="flex flex-col items-center text-center relative">
         <motion.div 
-          className="mb-4 p-4 rounded-full bg-white/80 backdrop-blur-sm relative z-10"
+          className="mb-4 p-4 rounded-full bg-white/90 backdrop-blur-sm relative z-10 shadow-md"
           variants={iconVariants}
           whileHover="hover"
         >
@@ -110,7 +110,7 @@ const FeatureCard = ({ feature, index }) => {
           {feature.icon}
         </motion.div>
         <motion.h3 
-          className="text-xl font-bold mb-3 relative z-10"
+          className="text-xl font-bold mb-3 relative z-10 bg-gradient-to-r from-orange-700 to-orange-500 bg-clip-text text-transparent"
           variants={textVariants}
           whileHover="hover"
         >
@@ -144,8 +144,14 @@ const Features = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="features" className="py-16 md:py-24 bg-gradient-to-br from-orange-50 to-white">
-      <div className="container mx-auto px-4 md:px-8 max-w-7xl">
+    <section id="features" className="py-16 md:py-24 bg-gradient-to-br from-orange-50 via-white to-orange-100 relative overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-orange-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-orange-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+      </div>
+
+      <div className="container mx-auto px-4 md:px-8 max-w-7xl relative z-10">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 20 }}

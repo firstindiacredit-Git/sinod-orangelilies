@@ -40,9 +40,16 @@ const Hero = () => {
   return (
     <section 
       id="hero" 
-      className="min-h-screen flex items-center justify-center pt-20 pb-16  bg-gradient-to-br from-orange-50 to-orange-100 overflow-hidden"
+      className="min-h-screen flex items-center justify-center pt-20 pb-16 md:pt-24 md:pb-20 bg-gradient-to-br from-orange-50 via-white to-orange-100 overflow-hidden relative"
     >
-      <div className="container mx-auto px-4 md:px-8 max-w-7xl">
+      {/* Decorative background elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-orange-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-orange-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+        <div className="absolute -bottom-8 left-20 w-96 h-96 bg-orange-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+      </div>
+
+      <div className="container mx-auto px-4 md:px-8 max-w-7xl relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <motion.div 
             className="w-full md:w-1/2 flex flex-col items-start"
@@ -58,7 +65,7 @@ const Hero = () => {
           >
             <motion.h1 
               variants={textVariants}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold font-serif leading-tight mb-6 text-orange-700"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold font-serif leading-tight mb-6 bg-gradient-to-r from-orange-700 to-orange-500 bg-clip-text text-transparent"
             >
               Period Care <motion.span 
                 className="text-orange-500 inline-block"
@@ -84,7 +91,7 @@ const Hero = () => {
             >
               <motion.a 
                 href="#pricing" 
-                className="btn-primary text-center px-8 py-3"
+                className="bg-gradient-to-r from-orange-500 to-orange-400 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:from-orange-600 hover:to-orange-500"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -92,7 +99,7 @@ const Hero = () => {
               </motion.a>
               <motion.a 
                 href="#features" 
-                className="flex items-center justify-center px-8 py-3 bg-white text-orange-500 rounded-full border border-orange-500 hover:bg-orange-50 transition duration-300"
+                className="flex items-center justify-center px-8 py-3 bg-white text-orange-500 rounded-full border border-orange-200 hover:border-orange-300 transition duration-300 shadow-md hover:shadow-lg"
                 whileHover={{ scale: 1.05, backgroundColor: "#fff7ed" }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -114,18 +121,18 @@ const Hero = () => {
           >
             <div className="relative w-full max-w-lg">
               <motion.div 
-                className="absolute -top-6 -left-6 w-24 h-24 bg-orange-200 rounded-full opacity-50"
+                className="absolute -top-6 -left-6 w-24 h-24 bg-gradient-to-br from-orange-200 to-orange-300 rounded-full opacity-50"
                 animate={floatingAnimation}
               />
               <motion.div 
-                className="absolute -bottom-6 -right-6 w-32 h-32 bg-orange-300 rounded-full opacity-40"
+                className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-orange-300 to-orange-400 rounded-full opacity-40"
                 animate={floatingAnimation}
                 transition={{ delay: 0.5 }}
               />
               <motion.img 
                 src={heroImage}
                 alt="Woman feeling comfortable and confident" 
-                className="rounded-2xl shadow-xl relative z-10 w-full h-auto object-contain"
+                className="rounded-2xl shadow-2xl relative z-10 w-full h-auto object-contain"
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
               />
