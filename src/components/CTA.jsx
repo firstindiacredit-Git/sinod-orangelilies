@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 const CTA = () => {
   return (
-    <section className="py-16 bg-orange-500 text-white">
+    <section className="py-16 bg-orange-400/90 text-white">
       <div className="container mx-auto px-4 md:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">
           Celebrate womanhood with Orange Lilies
@@ -28,7 +28,7 @@ const CTA = () => {
           </a>
         </div>
         
-        <div className="mt-12 p-4 bg-orange-600 rounded-lg inline-block">
+        <div className="mt-12 p-4 bg-orange-500/90 rounded-lg inline-block">
           <p className="text-white font-medium">
             Use Code: <span className="font-bold">FIRST15</span> for 15% off your first purchase
           </p>

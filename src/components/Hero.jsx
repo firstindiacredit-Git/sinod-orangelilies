@@ -40,7 +40,7 @@ const Hero = () => {
   return (
     <section 
       id="hero" 
-      className="min-h-screen flex items-center justify-center pt-20 pb-16 md:pt-24 md:pb-20 bg-gradient-to-br from-orange-50 to-orange-100 overflow-hidden"
+      className="min-h-screen flex items-center justify-center pt-20 pb-16  bg-gradient-to-br from-orange-50 to-orange-100 overflow-hidden"
     >
       <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { CheckCircle, ShoppingBag } from 'lucide-react';
-import boxImage from '../image/box.png';
+import boxImage from '../image/logo1.png';
 
 const benefits = [
   "360° Leak Protection",
@@ -22,17 +22,17 @@ const Pricing = () => {
         <div className="flex flex-col lg:flex-row gap-8 items-center justify-center max-w-6xl mx-auto">
           <div className="lg:w-1/2 w-full">
             <div className="relative">
-              <div className="absolute inset-0 -translate-x-4 -translate-y-4 bg-orange-200 rounded-xl opacity-50"></div>
+              <div className="absolute inset-0 -translate-x-4 -translate-y-4 rounded-xl opacity-50"></div>
               <img 
                 src={boxImage}
                 alt="Orange Lilies product package" 
-                className="relative z-10 rounded-xl shadow-lg w-full h-[200px] sm:h-[400px] md:h-[500px] object-cover object-center"
+                className="relative z-10 rounded-xl shadow-lg w-full h-[300px] sm:h-[400px] md:h-[550px] object-cover object-center"
               />
             </div>
           </div>
           
           <div className="lg:w-1/2">
-            <div className="bg-white border-2 border-orange-100 rounded-2xl p-8 shadow-lg">
+            <div className="bg-white border-2 border-orange-100 rounded-2xl p-4 shadow-lg">
               <div className="bg-orange-100 text-orange-800 inline-block px-4 py-1 rounded-full font-medium text-sm mb-4">
                 Most Popular
               </div>

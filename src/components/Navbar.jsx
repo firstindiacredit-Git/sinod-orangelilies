@@ -54,7 +54,7 @@ const Navbar = () => {
                                 <span className="text-white">About Us</span>
                             </a>
                         </div>
-                        <a href="#footer" className="bg-[#fff] hover:bg-orange-200 px-5 py-2 rounded-full transition-all duration-300 transform hover:scale-105">
+                        <a href="#footer" className="bg-[#fff] hover:bg-orange-200  px-5 py-2 rounded-full transition-all duration-300 transform hover:scale-105">
                             <span className="text-orange-500">Shop Now</span>
                         </a>
                     </nav>
